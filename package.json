@@ -1,0 +1,27 @@
+{
+  "name": "linebot-my-qr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.13.x"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "thitiph0n",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.3.0",
+    "qrcode": "^1.4.4",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "dotenv": "^8.2.0"
+  }
+}
