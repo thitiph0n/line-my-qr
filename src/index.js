@@ -3,13 +3,14 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const express = require('express');
-const { handleEvent } = require('./handleEvent');
+
+const { handleEvent } = require('./services/handleEvent');
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
   return res.send('Hello from express');
 });
 
